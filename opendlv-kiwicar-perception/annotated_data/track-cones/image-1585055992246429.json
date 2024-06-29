@@ -1,0 +1,606 @@
+{
+  "version": "0.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          200.0,
+          468.0
+        ],
+        [
+          242.0,
+          528.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          419.0,
+          445.0
+        ],
+        [
+          444.0,
+          485.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          623.0,
+          428.0
+        ],
+        [
+          640.0,
+          461.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          738.0,
+          420.0
+        ],
+        [
+          750.0,
+          448.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          820.0,
+          419.0
+        ],
+        [
+          832.0,
+          436.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          870.0,
+          407.0
+        ],
+        [
+          881.0,
+          429.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          847.0,
+          405.0
+        ],
+        [
+          855.0,
+          419.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          799.0,
+          403.0
+        ],
+        [
+          805.0,
+          418.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          740.0,
+          401.0
+        ],
+        [
+          747.0,
+          411.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          637.0,
+          403.0
+        ],
+        [
+          641.0,
+          408.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          435.0,
+          403.0
+        ],
+        [
+          439.0,
+          414.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          508.0,
+          402.0
+        ],
+        [
+          513.0,
+          411.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          577.0,
+          402.0
+        ],
+        [
+          583.0,
+          414.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          335.0,
+          403.0
+        ],
+        [
+          339.0,
+          412.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          180.0,
+          406.0
+        ],
+        [
+          186.0,
+          414.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          684.9152542372881,
+          401.9491525423729
+        ],
+        [
+          690.8474576271186,
+          413.8135593220339
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          1222.0,
+          554.0
+        ],
+        [
+          1279.0,
+          667.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          1008.0,
+          480.0
+        ],
+        [
+          1041.0,
+          533.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          1020.0,
+          448.0
+        ],
+        [
+          1039.0,
+          493.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          1066.0,
+          433.0
+        ],
+        [
+          1087.0,
+          473.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          1108.0,
+          424.0
+        ],
+        [
+          1125.0,
+          458.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          1158.0,
+          416.0
+        ],
+        [
+          1168.0,
+          446.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          1134.0,
+          409.0
+        ],
+        [
+          1142.0,
+          434.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          1070.0,
+          406.0
+        ],
+        [
+          1077.0,
+          424.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          997.0,
+          403.0
+        ],
+        [
+          1004.0,
+          422.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          920.0,
+          401.0
+        ],
+        [
+          925.0,
+          417.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          830.0,
+          400.0
+        ],
+        [
+          835.0,
+          417.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          763.0,
+          400.0
+        ],
+        [
+          769.0,
+          414.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          691.0,
+          400.0
+        ],
+        [
+          698.0,
+          412.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          617.0,
+          400.0
+        ],
+        [
+          624.0,
+          413.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          540.0,
+          399.0
+        ],
+        [
+          546.0,
+          414.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          451.0,
+          401.0
+        ],
+        [
+          456.0,
+          413.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          361.0,
+          402.0
+        ],
+        [
+          366.0,
+          415.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          223.0,
+          404.0
+        ],
+        [
+          228.0,
+          417.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          82.0,
+          406.0
+        ],
+        [
+          88.0,
+          420.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "image-1585055992246429.png",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280,
+  "text": ""
+}

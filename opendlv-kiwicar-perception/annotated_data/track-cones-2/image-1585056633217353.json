@@ -1,0 +1,265 @@
+{
+  "version": "0.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          268.0,
+          468.0
+        ],
+        [
+          307.0,
+          530.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          395.0,
+          442.0
+        ],
+        [
+          420.0,
+          487.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          467.0,
+          431.0
+        ],
+        [
+          481.0,
+          467.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          549.0,
+          429.0
+        ],
+        [
+          562.0,
+          452.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          639.0,
+          415.0
+        ],
+        [
+          646.0,
+          439.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          741.0,
+          411.0
+        ],
+        [
+          747.0,
+          434.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          837.0,
+          416.0
+        ],
+        [
+          847.0,
+          434.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          960.0,
+          416.0
+        ],
+        [
+          969.0,
+          433.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-blue",
+      "text": "",
+      "points": [
+        [
+          1140.0,
+          415.0
+        ],
+        [
+          1149.0,
+          433.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          924.0,
+          463.0
+        ],
+        [
+          961.0,
+          518.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          841.0,
+          438.0
+        ],
+        [
+          862.0,
+          472.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          878.0,
+          429.0
+        ],
+        [
+          894.0,
+          457.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          927.0,
+          426.0
+        ],
+        [
+          942.0,
+          449.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          1046.0,
+          425.0
+        ],
+        [
+          1059.0,
+          447.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "cone-yellow",
+      "text": "",
+      "points": [
+        [
+          1269.0,
+          424.0
+        ],
+        [
+          1279.0,
+          453.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "image-1585056633217353.png",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

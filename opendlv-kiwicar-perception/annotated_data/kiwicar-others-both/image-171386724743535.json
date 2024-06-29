@@ -1,0 +1,27 @@
+{
+  "version": "0.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "kiwicar",
+      "text": "",
+      "points": [
+        [
+          332.0,
+          185.0
+        ],
+        [
+          639.0,
+          339.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "image-171386724743535.png",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 640
+}

@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  video-h264-replay:
+    image: registry.opendlv.org/community/opendlv-data-replay-video-h264:1.1
+    network_mode: "host"
+    ipc: "host"
+    volumes:
+      - /home/globee/recordings:/opt/recordings
+      - /tmp:/tmp
+    environment:
+      - DISPLAY=${DISPLAY}
+    command: 
+      - "--cid=111" 
+      - "--rgb"
+      - "--name=replay" 
+      - "--autorewind"
+#      - "/opt/recordings/task2/2020-05-14_121543-video-all.rec"
+      - "/opt/recordings/20240423/kiwi-others-both.rec"
+      

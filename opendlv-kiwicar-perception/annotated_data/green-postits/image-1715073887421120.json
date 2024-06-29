@@ -1,0 +1,27 @@
+{
+  "version": "0.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "postit-green",
+      "text": "",
+      "points": [
+        [
+          101.0,
+          262.0
+        ],
+        [
+          134.0,
+          275.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "image-1715073887421120.png",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 640
+}

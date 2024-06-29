@@ -1,0 +1,44 @@
+{
+  "version": "0.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "kiwicar",
+      "text": "",
+      "points": [
+        [
+          147.0,
+          197.0
+        ],
+        [
+          273.0,
+          258.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "kiwicar",
+      "text": "",
+      "points": [
+        [
+          521.0,
+          196.0
+        ],
+        [
+          638.0,
+          275.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "image-1713867281229875.png",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 640
+}

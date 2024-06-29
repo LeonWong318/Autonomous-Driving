@@ -1,0 +1,7 @@
+message opendlv.custom.StartFrameMessage [id = 2001] {
+  uint16 frameID [id = 1];
+  uint16 numMessages [id=2];
+}
+message opendlv.custom.EndFrameMessage [id = 2002] {
+  uint16 frameID [id = 1];
+}

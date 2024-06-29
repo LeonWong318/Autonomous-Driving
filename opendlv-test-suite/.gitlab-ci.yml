@@ -1,0 +1,73 @@
+
+# Login to docker with a personal access token with read access
+# This is required to access images in other repos
+before_script:
+  - docker login -u CI-CD-PIPELINE -p $CI_CD_READ_REGISTRY_TOKEN $CI_REGISTRY
+
+# Order to run jobs in
+stages:
+  - hil-static-test
+  - sil-and-dil-tests
+  - hil-dynamic-test
+# Run tests on the static HIL rig
+hil-static:
+  stage: hil-static-test
+  tags:
+    - dodo-static # Use static HIL rig
+  script:
+    # Run the dodo runner to execute all tests defined in the configuration
+    - dodo-runner --config hil-static-conf.yml --out out --registry $DODO_REGISTRY -vvv
+  dependencies: [] # Do not download any old artifacts (then old exists)
+  
+  # Save artifacts and create a test report
+  artifacts:
+    when: always
+    paths:
+      - out/
+    reports:
+      junit: out/report.xml
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'pipeline'         # Run when triggered from another project
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH   # Run when merged to default branch
+
+# # Run DIL and SIL tests on a dedicated server (NO SUPPORT YET)
+# hil-and-dil:
+#   stage: sil-and-dil-tests
+#   tags:
+#     - dodo-server # Use SIL and DIL server
+#   script:
+#     # Run the dodo runner to execute all tests defined in the configuration
+#     - dodo-runner --config sil-dil-conf.yml --out out --registry $DODO_REGISTRY -vvv
+#   dependencies: [] # Do not download any old artifacts (then old exists)
+  
+#   # Save artifacts and create a test report
+#   artifacts:
+#     when: always
+#     paths:
+#       - out/
+#     reports:
+#       junit: out/report.xml
+#   rules:
+#     - if: $CI_PIPELINE_SOURCE == 'pipeline'         # Run when triggered from another project
+#     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH   # Run when merged to default branch
+
+# # Run tests on the dynamic HIL rig (NO SUPPORT YET)
+# hil-and-dil:
+#   stage: hil-dynamic-test
+#   tags:
+#     - dodo-dynamic # Use dynamic HIL rig
+#   script:
+#     # Run the dodo runner to execute all tests defined in the configuration
+#     - dodo-runner --config sil-dil-conf.yml --out out --registry $DODO_REGISTRY -vvv
+#   dependencies: [] # Do not download any old artifacts (then old exists)
+  
+#   # Save artifacts and create a test report
+#   artifacts:
+#     when: always
+#     paths:
+#       - out/
+#     reports:
+#       junit: out/report.xml
+#   rules:
+#     - if: $CI_PIPELINE_SOURCE == 'pipeline'         # Run when triggered from another project
+#     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH   # Run when merged to default branch

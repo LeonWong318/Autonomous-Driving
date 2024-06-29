@@ -1,0 +1,6 @@
+classes= 1
+train  = /home/globee/repo/tme290/opendlv-kiwicar-perception/labeled_data/train.txt
+valid = /home/globee/repo/tme290/opendlv-kiwicar-perception/labeled_data/val.txt
+names = /home/globee/repo/tme290/opendlv-kiwicar-perception/classes.txt
+backup = ./backup
+eval=coco

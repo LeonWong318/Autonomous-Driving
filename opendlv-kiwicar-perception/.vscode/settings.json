@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "vector": "cpp",
+        "string": "cpp",
+        "chrono": "cpp",
+        "iostream": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/globee/repo/tme290/opendlv-kiwicar-perception/cpp"
+}

@@ -1,0 +1,5 @@
+name: hil-static
+tests:
+  - name: static-hil-test
+    job: hil-camera
+    compose: run-HIL-static.yml

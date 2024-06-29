@@ -1,0 +1,13 @@
+name: sil-tests
+tests:
+  - name: straight-line-open
+    job: sil-open-straight
+    compose: run-SIL-DIL.yml
+  
+  - name: straight-line-closed
+    job: sil-closed-straight
+    compose: run-SIL-DIL.yml
+  
+  - name: kiwi-track
+    job: sil-closed-kiwi-track
+    compose: run-SIL-DIL.yml

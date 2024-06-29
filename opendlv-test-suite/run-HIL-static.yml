@@ -1,0 +1,31 @@
+services:
+  kiwi-perception:
+  # image: registry.git.chalmers.se/courses/tme290/2024/group7/opendlv-camera-perception:latest
+    image: registry.git.chalmers.se/courses/tme290/2024/group7/opendlv-kiwicar-perception:dev
+    network_mode: "host"
+    ipc: "host"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /tmp:/tmp
+      - ./models:/models
+    environment:
+      - DISPLAY=${DISPLAY}
+    command:
+      - "--verbose"
+      - "--debug"
+      - "--cfgFile=/models/yolov4-tiny.cfg"
+      - "--weightsFile=/models/yolov4-tiny_last_multiple_classes.weights"
+      - "--cid=111"
+      - "--name=img.bgr"
+      - "--property=yellow"
+      #DIMENSIONS NEW
+      - "--height=480"
+      - "--width=640"
+      #DIMENSIONS OLD
+      # - "--height=720"
+      # - "--width=1280"
+      - "--confThreshold=0.5"
+      - "--nmsThreshold=0.5"
+      - "--classes=/models/classes.txt"

@@ -1,0 +1,64 @@
+image: docker
+
+services:
+  - name: docker:dind
+
+variables:
+  # Platforms to support builds for
+  PLATFORMS: "linux/amd64,linux/arm64"
+  CONTAINER_RELEASE_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_TAG
+  CONTAINER_LATEST_TAG: $CI_REGISTRY_IMAGE:latest
+  CONTAINER_DEV_IMAGE: $CI_REGISTRY_IMAGE:dev
+  TEST_PROJECT: courses/tme290/2024/group7/opendlv-test-suite 
+
+# Order in which jobs are executed
+stages:
+  - build-dev
+  - trigger-integration-testing
+  - release
+# Login to the docker registry to access your private registry
+before_script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+
+# Build a docker image with the dev tag each time a new commit
+# is pushed to the main branch or a merge request is updated
+build-dev-docker:
+  tags:
+    - docker-build # Gitlab runner to use (must support docker build)
+  stage: build-dev
+  script:
+    # Setup multi-platform build context
+    - docker run --privileged --rm multiarch/qemu-user-static --reset -p yes
+    - docker context create multiplatformcontext
+    - docker buildx create --name multiplatformbuilder --use multiplatformcontext
+    # Build the image to multiple platforms
+    - docker buildx build --platform "$PLATFORMS" -t "$CONTAINER_DEV_IMAGE" --push --provenance=false .
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+# Trigger a downstream pipeline each time a new commit
+# is pushed to the main branch or a merge request is updated
+trigger-job:
+  stage: trigger-integration-testing
+  trigger:
+    project: $TEST_PROJECT # REPLACE with your own integration repo
+    strategy: depend    # Mirror status of the integration tests
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  allow_failure: true
+
+
+release-image:
+  stage: release
+  tags:
+    - docker-build # Gitlab runner to use (must support docker build)
+  script:
+    # Setup multi-platform build context
+    - docker run --privileged --rm multiarch/qemu-user-static --reset -p yes
+    - docker context create multiplatformcontext
+    - docker buildx create --name multiplatformbuilder --use multiplatformcontext
+    # Build the image to multiple platforms
+    - docker buildx build --platform "$PLATFORMS" -t "$CONTAINER_LATEST_TAG" -t "$CONTAINER_RELEASE_TAG" --push --provenance=false .
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^[0-9.]+$/

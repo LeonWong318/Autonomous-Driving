@@ -1,0 +1,52 @@
+services:
+  camera-perception-blue:
+    image: registry.git.chalmers.se/courses/tme290/2024/group7/opendlv-camera-perception:dev
+    network_mode: "host"
+    ipc: "host"
+    volumes:
+      - /tmp:/tmp
+    environment:
+      - DISPLAY=${DISPLAY}
+    command:
+      - "--verbose"
+      # - "--debug"
+      - "--cid=111"
+      - "--name=replay.rgb"
+      - "--property=blue"
+      #DIMENSIONS NEW
+      - "--height=480"
+      - "--width=640"
+      #DIMENSIONS OLD
+      # - "--height=720"
+      # - "--width=1280"
+      #ITERATIONS
+      - "--erosions=3"
+      - "--dilations=3"
+      #LOW HSV
+      - "--hueLow=110"
+      - "--satLow=50"
+      - "--valLow=30"
+      #HIGH HSV
+      - "--hueHigh=130"
+      - "--satHigh=255"
+      - "--valHigh=255"
+      #NUM EDGES
+      - "--minEdges=4"
+      - "--maxEdges=6"
+  milestone3:
+    image: registry.git.chalmers.se/courses/tme290/2024/group7/opendlv-milestone3:dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: "host"
+    ipc: "host"
+    environment:
+      - DISPLAY=${DISPLAY}
+    command:
+      - "--cid=111"
+      - "--property=blue"
+      - "--verbose"
+      - "--debug"
+      - "--imgWidth=640"
+      - "--imgHeight=480"
+      - "--speed=0.8"

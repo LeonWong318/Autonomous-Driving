@@ -1,0 +1,104 @@
+services:
+  camera-perception-blue:
+    image: registry.git.chalmers.se/courses/tme290/2024/group7/opendlv-camera-perception:dev
+    # image: martesan/opendlv-camera-perception
+    network_mode: "host"
+    ipc: "host"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /tmp:/tmp
+    environment:
+      - DISPLAY=${DISPLAY}
+    command:
+      - "--verbose"
+      - "--debug"
+      - "--controlHsv" # Does not work atm
+      - "--cid=111"
+      - "--name=replay.rgb"
+      - "--property=blue"
+      #DIMENSIONS NEW
+      - "--height=480"
+      - "--width=640"
+      #DIMENSIONS OLD
+      # - "--height=720"
+      # - "--width=1280"
+      - "--xThreshold=50"
+      - "--xThresholdCar=70"
+      #ITERATIONS
+      - "--erosions=2"
+      - "--dilations=2"
+      #NUM EDGES
+      - "--minEdges=3"
+      - "--maxEdges=4"
+      # NEW HSV VALUES
+      #LOW HSV
+      - "--hueLow=70"
+      - "--satLow=5"
+      - "--valLow=5"
+      #HIGH HSV
+      - "--hueHigh=130"
+      - "--satHigh=255"
+      - "--valHigh=100"
+      #NEW ROOM HSV
+      # #LOW HSV
+      # - "--hueLow=110"
+      # - "--satLow=50"
+      # - "--valLow=30"
+      # #HIGH HSV
+      # - "--hueHigh=130"
+      # - "--satHigh=255"
+      # - "--valHigh=255"
+
+  camera-perception-yellow:
+    image: registry.git.chalmers.se/courses/tme290/2024/group7/opendlv-camera-perception:dev
+    # image: martesan/opendlv-camera-perception
+    network_mode: "host"
+    ipc: "host"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /tmp:/tmp
+    environment:
+      - DISPLAY=${DISPLAY}
+    command:
+      - "--verbose"
+      - "--debug"
+      - "--controlHsv" # Does not work atm
+      - "--cid=111"
+      - "--name=replay.rgb"
+      - "--property=yellow"
+      #DIMENSIONS NEW
+      - "--height=480"
+      - "--width=640"
+      #DIMENSIONS OLD
+      # - "--height=720"
+      # - "--width=1280"
+      - "--xThreshold=40"
+      - "--xThresholdCar=70"
+      #ITERATIONS
+      - "--erosions=2"
+      - "--dilations=2"
+      # #NUM EDGES
+      - "--minEdges=3"
+      - "--maxEdges=4"
+      #NEW HSV VALUES
+      # LOW HSV
+      - "--hueLow=20"
+      - "--satLow=150"
+      - "--valLow=120"
+      #HIGH HSV
+      - "--hueHigh=30"
+      - "--satHigh=255"
+      - "--valHigh=200"
+      #NEW ROOM HSV
+      #LOW HSV
+      # - "--hueLow=20"
+      # - "--satLow=90"
+      # - "--valLow=90"
+      # #HIGH HSV
+      # - "--hueHigh=30"
+      # - "--satHigh=255"
+      # - "--valHigh=255"

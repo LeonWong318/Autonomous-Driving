@@ -1,0 +1,61 @@
+{
+  "version": "0.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "postit-green",
+      "text": "",
+      "points": [
+        [
+          203.0,
+          264.0
+        ],
+        [
+          237.0,
+          271.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "postit-green",
+      "text": "",
+      "points": [
+        [
+          521.0,
+          269.0
+        ],
+        [
+          570.0,
+          276.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "paper-blue",
+      "text": "",
+      "points": [
+        [
+          144.0,
+          241.0
+        ],
+        [
+          213.0,
+          250.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "image-171507389322206.png",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 640
+}

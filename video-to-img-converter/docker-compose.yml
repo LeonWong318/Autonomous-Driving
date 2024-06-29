@@ -1,0 +1,17 @@
+services:
+  camera-perception-blue:
+    # image: registry.git.chalmers.se/courses/tme290/2024/group7/opendlv-camera-perception:latest
+    image: martesan/convert
+    build: .
+    network_mode: "host"
+    ipc: "host"
+    volumes:
+      - /tmp:/tmp
+      - /home/globee/repo/tme290/convert-video-to-img/images:/images
+    environment:
+      - DISPLAY=${DISPLAY}
+    command:
+      - "--cid=111"
+      - "--name=replay.rgb"
+      - "--width=640"
+      - "--height=480"

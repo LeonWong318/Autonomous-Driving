@@ -1,0 +1,17 @@
+services:
+  perception-milestone2:
+    image: martesan/milestone2
+    network_mode: "host"
+    ipc: "host"
+    volumes:
+      - /tmp:/tmp
+    environment:
+      - DISPLAY=:1
+    command:
+      - "--verbose"
+      - "--debug"
+      - "--cid=111"
+      - "--name=replay.rgb"
+      - "--height=720"
+      - "--width=1280" 
+      - "--maxEdges=4"

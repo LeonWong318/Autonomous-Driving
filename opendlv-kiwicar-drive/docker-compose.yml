@@ -1,0 +1,22 @@
+services:
+  kiwicar-drive:
+    image: registry.git.chalmers.se/courses/tme290/2024/group7/opendlv-kiwicar-drive:dev
+    network_mode: "host"
+    ipc: "host"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command:
+      - "--debug"
+      - "--verbose"
+      - "--cid=111"
+      - "--property=kiwicar"
+      - "--baseSpeed=0.6"
+      - "--fastSpeed=0.5"
+      - "--freq=10"
+      - "--baseAngle=15.0"
+      - "--closeDist=0.3"
+      - "--farDist=0.8"
+      - "--calibrationError=0.08"
+      - "--convertAngle=70"
+      

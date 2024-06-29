@@ -1,0 +1,23 @@
+services:
+  project-task-1:
+    # image: registry.git.chalmers.se/courses/tme290/2024/group7/opendlv-:
+    image: data/project-task-1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: "host"
+    ipc: "host"
+    environment:
+      - DISPLAY=${DISPLAY}
+    command:
+      - "--debug"
+      - "--verbose"
+      - "--cid=111"
+      - "--baseSpeed=40"
+      - "--freq=40"
+      - "--convertAngle=40"
+      - "--threshold=15"
+      - "--lowXThreshold=70"
+      - "--highXThreshold=90"
+      - "--lowYThreshold=5"
+      - "--highYThreshold=60"
